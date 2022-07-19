@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#to-do-list-input {
+  padding: 10px 50px;
+  background-color: whitesmoke;
+  border: 1px solid lightgrey;
+}
+
+#to-do-list-actions-container{
+  width: 95%;
+  border: 1px solid lightgrey;
+  background-color: whitesmoke;
+  margin: auto;
+  display: flex;
+}
+
+.to-do-list-action{
+  font-size: 10px;
+  color: grey;
+  padding: 5px 2px;
+}
+
+#to-do-list-counter{
+  width: 25%;
+  user-select: none;
+}
+
+#to-do-list-all {
+  width: 20%;
+  cursor: pointer;
+  text-align: end;
+}
+
+#to-do-list-active {
+  width: 20%;
+  cursor: pointer;
+}
+
+#to-do-list-clear {
+  width: 35%;
+   text-align: end;
+  user-select: none;
+}
+
+#to-do-list-items-container{
+  border-right: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin: 0;
+  padding: 0;
+}
+
+.item-container {
+  height: 40px;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.item-input {
+  height: 90%;
+  width: 100%;
+}
+
+.itemAction {
+  width: 15%;
+}
+
+.tick-mark {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.tick-mark::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 50%;
+  width: 3px;
+  background-color: green;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+.tick-mark::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: green;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+.endAlign {
+  text-align: end;
+}
+
+.item{
+  width: 85%;
+}
+
+.cross-mark {
+  font-size: 16px;
+  font-weight: bold;
+  color: #a87b01;
+}
+
+.deleteItem {
+  display: none;
+}
+
+
+
+
+
